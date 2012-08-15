@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <SPS_Twumbag>
+            <version>0.1.0</version>
+        </SPS_Twumbag>
+    </modules>
+
+    <helpers>
+        <twumbag>
+            <class>SPS_Twumbag_Helper</class>
+        </twumbag>
+    </helpers>
+    <blocks>
+        <twumbag>
+            <class>SPS_Twumbag_Block</class>
+        </twumbag>
+    </blocks>
+</config>

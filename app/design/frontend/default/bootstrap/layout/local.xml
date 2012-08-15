@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="header">
+            <block type="twumbag/cms_default_home" name="twumbag.add" as="twumbagAdd" after="-" template="twumbag/add.phtml"/>
+        </reference>
+    </default>
+
+    <cms_index_defaultindex>
+        <reference name="head">
+            <action method="setTitle"><title>Twumbag | Hall-of-fame of Twitter Scumbags</title></action>
+        </reference>
+    </cms_index_defaultindex>
+
+</layout>
