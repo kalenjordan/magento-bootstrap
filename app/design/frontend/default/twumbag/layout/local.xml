@@ -2,7 +2,7 @@
 <layout>
     <default>
         <reference name="header">
-            <block type="twumbag/cms_default_home" name="twumbag.add" as="twumbagAdd" after="-" template="twumbag/add.phtml"/>
+            <block type="core/template" name="twumbag.add" as="twumbagAdd" after="-" template="twumbag/add.phtml"/>
         </reference>
     </default>
 

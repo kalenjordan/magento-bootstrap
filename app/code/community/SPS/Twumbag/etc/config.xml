@@ -7,14 +7,60 @@
         </SPS_Twumbag>
     </modules>
 
-    <helpers>
-        <twumbag>
-            <class>SPS_Twumbag_Helper</class>
-        </twumbag>
-    </helpers>
-    <blocks>
-        <twumbag>
-            <class>SPS_Twumbag_Block</class>
-        </twumbag>
-    </blocks>
+    <global>
+
+        <models>
+            <twumbag>
+                <class>SPS_Twumbag_Model</class>
+                <resourceModel>twumbag_mysql4</resourceModel>
+            </twumbag>
+            <twumbag_mysql4>
+                <class>TBT_RewardsPlatform_Model_Mysql4</class>
+                <entities>
+                    <account>
+                        <table>twumbag_account</table>
+                    </account>
+                    <bet>
+                        <table>twumbag_bet</table>
+                    </bet>
+                </entities>
+            </twumbag_mysql4>
+        </models>
+
+        <resources>
+            <twumbag_setup>
+                <setup>
+                    <module>SPS_Twumbag</module>
+                    <class>SPS_Twumbag_Model_Resource_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </twumbag_setup>
+            <twumbag_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </twumbag_write>
+            <twumbag_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </twumbag_read>
+        </resources>
+
+        <helpers>
+            <twumbag>
+                <class>SPS_Twumbag_Helper</class>
+            </twumbag>
+        </helpers>
+
+        <blocks>
+            <twumbag>
+                <class>SPS_Twumbag_Block</class>
+            </twumbag>
+        </blocks>
+
+    </global>
+
 </config>
