@@ -1,7 +1,7 @@
 <?php if (!$this->getAccounts()->count()): ?>
     None found
 <?php else: ?>
-    <table class="bordered-table zebra-striped">
+    <table class="bordered-table zebra-striped twumbag-list">
         <thead>
         <tr>
             <th>Score</th>
@@ -11,8 +11,8 @@
         <tbody>
         <?php foreach ($this->getAccounts() as $account): ?>
             <tr>
-                <td width="15%" style="line-height: 25px; height: 22px; padding-bottom: 0px;">-<?php echo $account->getPoints(); ?></td>
-                <td style="line-height: 25px; height: 22px; padding-bottom: 0px;">
+                <td width="15%"><?php echo $account->getPoints(); ?></td>
+                <td>
                     <?php echo $this->getHtmlImageTag($account); ?>
                     &nbsp;@<?php echo $account->getUsername(); ?>
                 </td>

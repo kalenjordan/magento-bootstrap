@@ -6,6 +6,7 @@ class SPS_Twumbag_Block_Twumbag_List_Winner extends SPS_Twumbag_Block_Twumbag_Li
     {
         return Mage::getModel('twumbag/account')
             ->getCollection()
-            ->addFieldToFilter('points', array('gt' => 0));
+            ->addFieldToFilter('points', array('gt' => 0))
+            ->setOrder('points', 'DESC');
     }
 }
