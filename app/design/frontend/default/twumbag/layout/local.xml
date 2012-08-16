@@ -10,6 +10,10 @@
         <reference name="head">
             <action method="setTitle"><title>Twumbag | Hall-of-fame of Twitter Scumbags</title></action>
         </reference>
+        <reference name="default_home_page">
+            <block type="twumbag/twumbag_list_winner" name="twumbagListWinner" template="twumbag/list.phtml" />
+            <block type="twumbag/twumbag_list_loser" name="twumbagListLoser" template="twumbag/list.phtml" />
+        </reference>
     </cms_index_defaultindex>
 
 </layout>

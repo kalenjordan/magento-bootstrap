@@ -15,7 +15,7 @@
                 <resourceModel>twumbag_mysql4</resourceModel>
             </twumbag>
             <twumbag_mysql4>
-                <class>TBT_RewardsPlatform_Model_Mysql4</class>
+                <class>SPS_Twumbag_Model_Mysql4</class>
                 <entities>
                     <account>
                         <table>twumbag_account</table>
